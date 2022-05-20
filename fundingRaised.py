@@ -3,11 +3,11 @@ import csv
 class Funding_Raised:
     @staticmethod
     def where(options = {}):
-        with open("startup_funding.csv", "rt") as fnd:
-            d = csv.reader(fnd, delimiter=',', quotechar='"')
-            csv_data = []
-            for row in d:
-                csv_data.append(row)
+        fnd = open("startup_funding.csv", "rt")
+        d = csv.reader(fnd, delimiter=',', quotechar='"')
+        csv_data = []
+        for row in d:
+            csv_data.append(row)
 
         funding = []
         if 'company_name' in options:
@@ -57,11 +57,12 @@ class Funding_Raised:
 
     @staticmethod
     def find_by(options):
-        with open("startup_funding.csv", "rt") as fnd:
-            data = csv.reader(fnd, delimiter=',', quotechar='"')
-            csv_data = []
-            for row in data:
-                csv_data.append(row)
+        fnd = open("startup_funding.csv", "rt")
+
+        data = csv.reader(fnd, delimiter=',', quotechar='"')
+        csv_data = []
+        for row in data:
+            csv_data.append(row)
 
         if 'company_name' in options:
             for row in csv_data:
