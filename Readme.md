@@ -13,5 +13,3 @@ You have 45 minutes to complete this exercise.  You are not expected to have
 enough time to make all of the changes you would like.  Part of the exercise
 is the time constraint: you have to prioritize what you think will be the most
 beneficial refactor, and weigh it with how much time it will take you.
-
-When you are done, please create a pull request to https://github.com/TwistoPayments/recruitmentRefactor
